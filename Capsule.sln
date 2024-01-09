@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeCapsuleProof", "Test\TimeCapsuleProof.csproj", "{8B017F12-EDF1-4D5F-BCE7-30B72D31B67F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeCapsuleProof", "Capsule\TimeCapsuleProof.csproj", "{1E55687F-A406-431D-96F5-3259C0A9E11C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B017F12-EDF1-4D5F-BCE7-30B72D31B67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B017F12-EDF1-4D5F-BCE7-30B72D31B67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B017F12-EDF1-4D5F-BCE7-30B72D31B67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B017F12-EDF1-4D5F-BCE7-30B72D31B67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E55687F-A406-431D-96F5-3259C0A9E11C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E55687F-A406-431D-96F5-3259C0A9E11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E55687F-A406-431D-96F5-3259C0A9E11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E55687F-A406-431D-96F5-3259C0A9E11C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
