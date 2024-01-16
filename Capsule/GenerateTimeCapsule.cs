@@ -123,7 +123,7 @@ namespace TimeCapsuleProof
       var secret1Decripted = AesEncryption.Decrypt(secret2Decripted, key2Decompose, iv2Decompose);
       var secret0Decripted = AesEncryption.Decrypt(secret1Decripted, key1Decompose, iv1Decompose);
 
-      Console.WriteLine($"Secret decripted:{Encoding.UTF8.GetString(secret0Decripted)}");
+      Console.WriteLine($"Secret decrypted:{Encoding.UTF8.GetString(secret0Decripted)}");
     }
   }
 }
