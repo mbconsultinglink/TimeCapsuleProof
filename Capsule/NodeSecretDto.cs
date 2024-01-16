@@ -15,9 +15,8 @@ namespace TimeCapsuleProof
 
     public override string ToString()
     {
-      return $"NodeId: {NodeId} {Environment.NewLine}   Keys: {string.Join(" ",Keys)} {Environment.NewLine}" +
-        $"   Ivs: {string.Join(" ", Ivs)} {Environment.NewLine}" +
-        $"   Secret: {string.Join(" ", Secret)} {Environment.NewLine}";
+      return $"NodeId: {NodeId} {Environment.NewLine}   Keys: {string.Join(" ", Keys)} {Environment.NewLine}" +
+        $"   Ivs: {string.Join(" ", Ivs)} {Environment.NewLine}";
     }
   }
   public class NodeSecretMap

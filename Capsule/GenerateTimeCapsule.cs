@@ -23,8 +23,9 @@ namespace TimeCapsuleProof
       var iv2 = RandomNumberGenerator.GetBytes(ivLength);
       var iv3 = RandomNumberGenerator.GetBytes(ivLength);
 
-      var secretBytes = Encoding.UTF8.GetBytes(
-        JsonSerializer.Serialize(new { Secret = secret, SecretPublicId = publicId }));
+      var dataJson = JsonSerializer.Serialize(new { Secret = secret, SecretPublicId = publicId });
+      var secretBytes = Encoding.UTF8.GetBytes(dataJson);
+      Console.WriteLine($"User secret: {dataJson}");
       var secret1Encripted = AesEncryption.Encrypt(secretBytes, key1, iv1);
       var secret2Encripted = AesEncryption.Encrypt(secret1Encripted, key2, iv2);
       var secret3Encripted = AesEncryption.Encrypt(secret2Encripted, key3, iv3);
@@ -115,6 +116,8 @@ namespace TimeCapsuleProof
 
       var secret3Decripted = nodes.SelectMany(x => x.Secret).
         OrderBy(x => x.Index).SelectMany(x => x.Key).ToArray();
+
+      Console.WriteLine($"Public secret encripted:{BitConverter.ToString(secret3Decripted)}");
 
       var secret2Decripted = AesEncryption.Decrypt(secret3Decripted, key3Decompose, iv3Decompose);
       var secret1Decripted = AesEncryption.Decrypt(secret2Decripted, key2Decompose, iv2Decompose);
